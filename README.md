@@ -2,14 +2,14 @@
 
 Author: Athira P
 
-Project Overview:
+## Project Overview:
 This project builds a machine learning pipeline to predict whether an online visitor will make a purchase (Revenue = True) on an e-commerce website. The project also provides insights into visitor behavior and identifies key features influencing purchase decisions.
 
-Project Aim
+## Project Aim
 
 To develop a predictive model that forecasts customer purchase intention using session-level and visitor behavior data. The insights help e-commerce platforms optimize marketing strategies, website experience, and improve conversion rates.
 
-Objectives
+## Objectives
 
 Analyze visitor session and behavioral data.
 
@@ -21,12 +21,12 @@ Handle skewness, outliers, and class imbalance for better model performance.
 
 Generate actionable insights and predicted customer lists for business decisions.
 
-Dataset
+## Dataset
 
 Source: Online Shoppers Intention Dataset
 Size: 12,205 rows × 18 columns (after duplicate removal)
 
-Key Features:
+## Key Features:
 
 Numerical: Administrative, Informational, ProductRelated, BounceRates, ExitRates, PageValues, SpecialDay, OperatingSystems, Browser, Region, TrafficType
 
@@ -34,12 +34,12 @@ Categorical: Month, VisitorType, Weekend
 
 Target: Revenue (True if purchase made, False otherwise)
 
-Project Workflow
-1. Install & Import Libraries
+## Project Workflow
+### 1. Install & Import Libraries
 
 Libraries used: pandas, numpy, seaborn, matplotlib, scikit-learn, imblearn, lightgbm, xgboost.
 
-2. Load & Preprocess Data
+### 2. Load & Preprocess Data
 
 Handled missing values and duplicates.
 
@@ -51,13 +51,13 @@ Separated numerical and categorical features.
 
 Scaled numerical features and encoded categorical features.
 
-3. Train-Test Split & Imbalance Handling
+### 3. Train-Test Split & Imbalance Handling
 
 Split data (80/20) into train and test sets.
 
 Balanced the training set using SMOTE to handle class imbalance.
 
-4. Model Training & Evaluation
+### 4. Model Training & Evaluation
 
 Models trained: Logistic Regression, Random Forest, LightGBM.
 
@@ -65,7 +65,7 @@ Evaluated using Accuracy, Precision, Recall, F1-Score, Confusion Matrix, and ROC
 
 LightGBM selected as best-performing model for final predictions.
 
-5. Feature Importance & Insights
+### 5. Feature Importance & Insights
 
 Extracted top predictive features using LightGBM.
 
@@ -73,7 +73,7 @@ Key features include ProductRelated_Duration, ExitRates, PageValues, and Adminis
 
 Visualized feature importance and generated actionable insights.
 
-6. Final Predicted Customers
+### 6. Final Predicted Customers
 
 Predicted customers with high purchase intention.
 
@@ -87,7 +87,7 @@ Predicted Purchase %	15.7%
 
 Plots generated: Predicted purchase distribution, top 15 features impacting purchase.
 
-Usage
+## Usage
 
 Clone the repository:
 
@@ -102,7 +102,7 @@ Run all cells sequentially to preprocess data, train models, and generate predic
 
 The predicted customer list is saved as predicted_customers.csv.
 
-Key Insights
+## Key Insights
 
 Majority of visitors do not purchase (84.3%).
 
@@ -112,7 +112,7 @@ LightGBM performed best overall with balanced precision and recall.
 
 Predicted customers provide a target list for marketing campaigns.
 
-Future Improvements
+## Future Improvements
 
 Include behavioral clustering for advanced segmentation.
 
@@ -120,4 +120,5 @@ Integrate real-time prediction using streaming visitor data.
 
 Test additional ensemble or deep learning models for improved accuracy.
 
-License
+### License
+All Rights Reserved
